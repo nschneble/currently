@@ -18,7 +18,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
           '@': fileURLToPath(new URL('./src', import.meta.url))
         }
       },
-      base: './'
+      base: ''
     }
   } else {
     // production config
@@ -32,7 +32,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
           '@': fileURLToPath(new URL('./src', import.meta.url))
         }
       },
-      base: './currently/'
+      base: 'https://nschneble.github.io/currently'
     }
   }
 })
