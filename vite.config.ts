@@ -16,6 +16,6 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
         '@': fileURLToPath(new URL('./src', import.meta.url))
       }
     },
-    base: command === 'serve' ? './' : '/currently/'
+    base: command === 'serve' ? './' : '/'
   }
 })
